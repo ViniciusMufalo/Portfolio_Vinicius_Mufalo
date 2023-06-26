@@ -26,6 +26,7 @@ header {
     position: fixed;
     opacity: 0.8;
     font-weight: 600;
+    width: 50%;
 }
 
 header .cabecalho_link {
