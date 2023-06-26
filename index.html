@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vinicius Mufalo">
+    <meta name="description" content="Portfolio desenvolvido por Vinicus Mufalo">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Portfolio</title>
+
+    <script>
+        //efeito abas dos icones em habilidades:
+
+        function abrirTabIconesHabilidade(idTab) {
+            var habilidades = document.getElementsByClassName('icone_conteudo');
+
+            for (var i = 0; i < habilidades.length; i++) {
+                habilidades[i].style.display = 'none';
+            }
+
+            document.getElementById(idTab).style.display = 'block';
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <section class="cabecalho_link">
+            <li>
+                <div class="inicio"><a href="#inicio">Início</a></div>
+            </li>
+            <li>
+                <div class="sobre_mim"><a href="#sobre_mim">Sobre mim</a></div>
+            </li>
+            <li>
+                <div class="projetos"><a href="#projetos">Projetos</a></div>
+            </li>
+
+            <a href="#contato"> <button>Meu Contato</button></a>
+        </section> <!-- Cabeçalho-->
+    </header><!-- oq vai sempre aparecer-->
+
+    <main>
+
+        <section class="inicio" id="inicio">
+
+            <div class="inicio_descricao_e_img">
+                <h1>
+                    <p><br /><br /><br />Sou <span class="gradiente">Vinícius Múfalo</span>, <br />estudante de Análise
+                        e
+                        Desenvolvimento de Sistemas.</p>
+                </h1>
+
+                <img src="./src/imagens/programer.png" alt="Imagem de um programador" width="350">
+            </div>
+
+            <div class="inicio_link">
+                <li>
+                    <a href="https://www.linkedin.com/in/vin%C3%ADcius-m%C3%BAfalo-263bb8236" target="_blank"> <img
+                            src="./src/imagens/linkedin-logo.png" alt="logo linkedin" width="40"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/ViniciusMufalo" target="_blank"><img src="./src/imagens/github-logo.png"
+                            alt="logo linkedin" width="40"></a>
+                </li>
+                <a href="https://viniciusmufalo.github.io/Curriculo_Vinicius/"
+                    target="_blank"><button>Currículo</button></a>
+            </div>
+        </section><!--inicio-->
+
+
+
+        <section class="sobre_mim" id="sobre_mim">
+
+            <h1>
+                <div class="subtitulo">
+
+                
+                    <div class="abas_sobre_mim" id="quem_sou_eu">Quem sou eu
+                    </div>
+
+                </div>
+            </h1>
+
+            <div class="sobre_mim_conteudo" id="quem_sou_eu_conteudo">
+
+                <img src="./src/imagens/minha_foto.png" alt="Minha foto" width="500" height="300">
+
+                <p>
+                    <br /><br /><br />Eu, Vinícius Cardoso Múfalo, formado em Medicina Veterinária pela USP e atualmente
+                    estudante
+                    de <span class="gradiente"><b>Análise e Desenvolvimento de Sistemas</b></span> na Unicesumar, busco
+                    colocar em <b>prática</b> o conteúdo da faculdade e dos cursos extracurriculares e ampliar meus conhecimentos na área de
+                    programação.<br /><br />
+                    Sou apaixonado por tecnologia e inovação. Pretendo trabalhar em empresa na área, por isso resolvi me
+                    desafiar e iniciar uma nova faculdade para me inserir no mercado de tecnologia. <br /><br />
+                    Entendo, principalmente, de tecnologias voltadas para <span
+                        class="gradiente"><b>Front-end</b></span>. Clique em "habilidades" para mais informações.
+                </p>
+            </div>
+
+            <br/><br/><br/><br/><br/><br/><br/>
+
+            <h1>
+            <div class="subtitulo">
+                <span class="centralizar">
+                <div class="abas_sobre_mim" id="habilidades">Habilidades</span>
+                </div>
+            </div>
+            </h1>
+
+            <div class="sobre_mim_conteudo" id="habilidades_conteudo">
+
+                <div class="habilidades_icones">
+                    <span class="icone_html">
+                        <img src="./src/imagens/html_logo.png" alt="Logo HTML" width="50" height="50"
+                        onmouseenter="abrirTabIconesHabilidade('html')"></span>
+                    <span class="icone_css">
+                        <img src="./src/imagens/CSS3_logo.svg.png" alt="Logo CSS" width="50" height="50"
+                        onmouseenter="abrirTabIconesHabilidade('css')"></span>
+                    <span class="icone_js">
+                        <img src="./src/imagens/js_logo.png" alt="Logo JavaScript" width="95" height="50"
+                        onmouseenter="abrirTabIconesHabilidade('js')"></span>
+
+                    <span class="icone_c">
+                        <img src="./src/imagens/linguagem_c_logo.png" alt="Logo Linguagem C" width="50" height="50"
+                        onmouseenter="abrirTabIconesHabilidade('c')"></span>
+                    <span class="icone_java">
+                        <img src="./src/imagens/JAVA_logo.png" alt="Logo Java" width="95"
+                            height="50" onmouseenter="abrirTabIconesHabilidade('java')"></span>
+                    <span class="icone_shotcut">
+                        <img src="./src/imagens/shotcut_logo.png" alt="Logo Shotcut" width="50"
+                            height="40" onmouseenter="abrirTabIconesHabilidade('edicao')"></span>
+                </div>
+
+
+                <div class="habilidades_descricao_item" id="habilidades_descricao_item">
+                    <div class="icone_conteudo" id="html">
+                        <b>HTML</b> - Linguagem de Marcação de HiperTexto
+
+                        <p>Tive primeiro contato com HTML ao fazer um curso básico, após isso, resolvi me aprofundar, realizando outros projetos e cursos da ProWay oferecido pelo Programa Start by Capgemini.  A contrução desse portifólio foi o projeto, até então, que mais precisei por em prática os conhecimentos.
+
+                        </p>
+                    </div>
+                    <div class="icone_conteudo" id="css">
+                        <b>CSS</b> - Cascading Style Sheets
+
+                        <p>O mesmo curso de HTML me levou a conhecer o CSS. Me interessei nessa parte de estilizar páginas e comecei a testar códigos. Também realizei outros projetos e cursos da ProWay, assim como, a criação desse portfólio. Continuarei me empenhando para criar páginas mais elaboradas e criativas.</p>
+                    </div>
+                    <div class="icone_conteudo" id="js">
+                        <b>JavaScript</b>
+
+                        <p>O JS está sendo mais desafiador de colocar em prática quando comparado ao HTML e o CSS, no entanto estou buscando aprender e entender melhor como aplicar os conceitos básicos para poder tornar minhas páginas mais dinâmicas e profissionais. </p>
+                    </div>
+                    <div class="icone_conteudo" id="c">
+                        <b>Linguagem C</b>
+
+                        <p> A linguagem C é a mais utilizada na minha faculdade e foi ensinada desde o início,
+                            passando pela lógica de programação aplicada à essa linguagem.</p>
+                    </div>
+                    <div class="icone_conteudo" id="java">
+                        <b>Java</b>
+
+                        <p>Tive contato com Java na "Trilha Java" oferecido pelo Programa Start by Capgemini e também na
+                            matéria de Java na Faculdade. Ainda não realizei nenhum projeto utilizando tais
+                            conhecimentos, mas sigo estudando e em breve irei aplicar.</p>
+                    </div>
+                    <div class="icone_conteudo" id="edicao">
+                        <b>ShotCut</b> - Edição de Vídeo
+
+                        <p> Tenho conhecimento em edição de vídeo pois já editei para meu antigo canal no Youtube e trabalhos da
+                            faculdade. O software que tenho maior familiaridade é o ShotCut.</p>
+                    </div>
+
+                </div>
+
+                <div class="ativo">
+                    <p>
+                        */Passe o mouse no ícone para mais informações/*
+                    </p>
+                </div>
+            </div>
+
+        </section><!--sobre mim-->
+
+        <section class="projetos" id="projetos">
+            <h1>
+                <div class="subtitulo">Projetos</div>
+            </h1>
+            <div class="projeto_link">
+
+                <span class="projeto_impar">
+                    <a href="https://viniciusmufalo.github.io/Curriculo_Vinicius/" target="_blank"><img
+                            src="./src/imagens/gif_curriculo.gif" alt="gif sobre meu curriculo" width="200"></a></br>
+                    <p><b>Curriculo Vitae</b></br></br>
+                        Este foi meu primeiro projeto, utilizando apenas <b>HTML</b> e <b>CSS</b>.</p></br>
+                </span>
+
+                <span class="projeto_par">
+                    <p><b>Projeto Pokedex</b></br></br>
+                        Projeto realizado durante um curso para aprender o básico de <b>HTML</b>, <b>CSS</b> e
+                        <b>JS</b>.
+                    </p></br>
+                    <a href="https://viniciusmufalo.github.io/pokedex-pokemon/" target="_blank"><img
+                            src="./src/imagens/gif_pokedex.gif" alt="gif sobre meu projeto pokedex"
+                            width="200"></a></br>
+                </span>
+
+                <span class="projeto_impar">
+                    <a href="#" target="_blank"><img src="./src/imagens/em-breve-1-300x243-removebg-preview.png"
+                            alt="imagem escrito em breve" width="200"></a></br>
+                    <p><b>*Em desenvolvimento*</b></br></br>
+                        *Descrição do terceiro projeto*</p></br>
+                </span>
+
+            </div>
+
+             
+
+            Mais projetos: <a href="https://github.com/ViniciusMufalo" target="_blank"><img
+                    src="./src/imagens/github-logo.png" alt="logo linkedin" width="40"></a>
+        </section><!--Projetos-->
+
+
+        <section class="contato" id="contato">
+
+            <h1>
+                <div class="subtitulo">Contato</div>
+            </h1>
+
+
+            <div class="contato_link">
+
+                <p>
+                    Se você busca uma pessoa que gosta de aprender e colocar os conhecimentos em prática, eu sou essa
+                    pessoa
+                    e estou ancioso para poder trabalhar com você &#128512 <br /><br />
+
+                    Alguma dúvida ou sugestão? Entre em contato. <br /></p>
+
+                <img src="./src/imagens/gmail-logo.png" width="35" height="35" alt="logo gmail" />
+                <a href="mailto:viniciusmufalo@gmail.com" target="_blank">viniciusmufalo@gmail.com</a><br />
+
+                <img src="./src/imagens/whatsapp-logo.png" width="35" height="35" alt="logo whatsapp" />
+                <a href="https://wa.me/5511994998008" target="_blank"> (11)994998008</a><br />
+
+            </div>
+
+            <div class="info_complementar">
+            Atualizado 06/2023<br /><br />
+        Imagem início: desenvolvido por RT Studio e vem de
+        https://pt.pngtree.com/freepng/flat-design-concept-of-programmers-at-work-mobile-app-software-development-with-characters-can-use-for-web-banner-business-analysis-landing-page-website-template-vector-illustration_5870919.html?sol=downref&id=bef
+            
+            </div>
+
+        </section><!--Contato-->
+
+    </main>
+
+    <script src="src/js/script.js"></script>
+
+</body>
+
+
+    
+
+</html>
