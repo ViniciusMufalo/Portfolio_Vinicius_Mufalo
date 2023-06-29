@@ -303,4 +303,7 @@ main .inicio_descricao_e_img,
         align-self: center;
     }
 
+    .info_complementar{
+        font-size: xx-small;
+    }
 }
