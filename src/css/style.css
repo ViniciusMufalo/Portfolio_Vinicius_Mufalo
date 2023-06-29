@@ -55,12 +55,14 @@ main button:hover {
     transform: scale(1.05);
 }
 
+
+
 main .inicio {
     background-color: #96E0E0;
     padding-top: 10%;
-    padding-left: 25%;
-    padding-right: 30%;
     padding-bottom: 15%;
+    padding-right: 30%;
+    padding-left: 25%;
     font-size: medium;
 }
 
@@ -90,30 +92,28 @@ main .sobre_mim {
     background-color: #88D4D4;
     padding-top: 10%;
     padding-bottom: 10%;
-    padding-left: 15%;
     padding-right: 15%;
+    padding-left: 15%;
+
 }
 
-main .sobre_mim .subtitulo {
-    display: flex;
-    padding-left: 32.5%;
-    gap: 5rem;
+main .sobre_mim_titulo {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    list-style: none;
-}
-
-main #quem_sou_eu,
-#habilidades {
     border: solid 2px rgb(0, 0, 0);
     border-radius: 10%;
     padding: 2px;
+    text-align: center;
 }
 
-main .subtitulo .centralizar{
-    padding-left: 17%;
+main #quem_sou_eu_titulo {
+    width: 160px;
+    margin-left: 40%;
 }
 
+main #habilidades_titulo {
+    width: 140px;
+    margin-left: 40%;
+}
 
 main #quem_sou_eu_conteudo {
     gap: 3rem;
@@ -160,7 +160,6 @@ main .icone_html:hover,
     opacity: 1;
 }
 
-/*linkado com js*/
 #html,
 #css,
 #js,
@@ -243,8 +242,7 @@ main .contato_link a {
 /*linkado com o .script.js para fazer o efeito de aparecer aos poucos*/
 main .inicio_descricao_e_img,
 .inicio_link,
-.sobre_mim_conteudo,
-.contato_link {
+.sobre_mim_conteudo {
     visibility: hidden;
 }
 
@@ -262,4 +260,47 @@ main .inicio_descricao_e_img,
     -webkit-background-clip: text;
 
     color: transparent;
+}
+
+/*responsividade para celular*/
+
+@media screen and (max-width: 768px) {
+
+    section,
+    aside {
+        width: 100%;
+    }
+
+    header {
+        display: none;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    .inicio_descricao_e_img,
+    #quem_sou_eu_conteudo,
+    .contato_link {
+        flex-direction: column;
+    }
+
+    .inicio_descricao_e_img img {
+        width: 250px;
+        height: 250px;
+        align-self: center;
+        padding-bottom: 5%;
+    }
+
+    #quem_sou_eu_conteudo img {
+        width: 250px;
+        height: 250px;
+        align-self: center;
+        padding-top: 5%;
+    }
+
+    .contato_link img {
+        align-self: center;
+    }
+
 }
