@@ -281,6 +281,10 @@ main .inicio_descricao_e_img,
         text-align: center;
     }
 
+    main .projeto_par {
+        padding-left: 0%;
+    }
+    
     .inicio_descricao_e_img,
     #quem_sou_eu_conteudo,
     .contato_link {
@@ -311,4 +315,3 @@ main .inicio_descricao_e_img,
     }
 
 }
-
