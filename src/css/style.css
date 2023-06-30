@@ -1,7 +1,8 @@
 * {
-    margin: 0;
+    margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 
 .roxo {
@@ -69,6 +70,7 @@ main .inicio {
 main .inicio_descricao_e_img {
     display: flex;
     gap: 3rem;
+    
 }
 
 main .inicio_link {
@@ -94,7 +96,6 @@ main .sobre_mim {
     padding-bottom: 10%;
     padding-right: 15%;
     padding-left: 15%;
-
 }
 
 main .sobre_mim_titulo {
@@ -268,7 +269,8 @@ main .inicio_descricao_e_img,
 
     section,
     aside {
-        width: 100%;
+        min-width: none;
+        margin: 0px;
     }
 
     header {
@@ -283,6 +285,7 @@ main .inicio_descricao_e_img,
     #quem_sou_eu_conteudo,
     .contato_link {
         flex-direction: column;
+        
     }
 
     .inicio_descricao_e_img img {
@@ -306,4 +309,6 @@ main .inicio_descricao_e_img,
     .info_complementar{
         font-size: xx-small;
     }
+
 }
+
