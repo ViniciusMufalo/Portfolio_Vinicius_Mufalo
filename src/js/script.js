@@ -1,3 +1,4 @@
+
 //efeito de aparecer aos poucos:
 window.sr = ScrollReveal({reset:true});
 
@@ -16,9 +17,12 @@ function abrirTabIconesHabilidade(idTab) {
 
     for (var i = 0; i < habilidades.length; i++) {
         habilidades[i].style.display = 'none';
+        document.getElementById('ativo').style.display = 'block';
     }
 
     document.getElementById(idTab).style.display = 'block';
+    document.getElementById('ativo').style.display = 'none';
+    
 }//efeito abas dos icones em habilidades
 
 
@@ -32,7 +36,6 @@ function mostrar(){
     
     mostrarProjetos.style.display = 'block'
     verMenosBotao.style.display = 'block'
-    verMenosBotao.style.marginLeft = "46%"
     verMaisBotao.style.display = 'none'
 }
 
@@ -41,7 +44,7 @@ function esconder(){
     mostrarProjetos.style.display = 'none'
     verMenosBotao.style.display = 'none'
     verMaisBotao.style.display = 'block'
-    verMaisBotao.style.marginLeft = "46%"
 }
 
 //Ver Mais/Ver Menos
+
