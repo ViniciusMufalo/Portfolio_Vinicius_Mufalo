@@ -62,7 +62,7 @@ main .inicio {
     background-color: #96E0E0;
     padding-top: 10%;
     padding-bottom: 15%;
-    padding-right: 30%;
+    padding-right: 25%;
     padding-left: 25%;
     font-size: medium;
 }
@@ -94,8 +94,7 @@ main .sobre_mim {
     background-color: #88D4D4;
     padding-top: 10%;
     padding-bottom: 10%;
-    padding-right: 15%;
-    padding-left: 15%;
+    
 }
 
 main .sobre_mim_titulo {
@@ -104,22 +103,17 @@ main .sobre_mim_titulo {
     border-radius: 10%;
     padding: 2px;
     text-align: center;
-}
-
-main #quem_sou_eu_titulo {
     width: 160px;
-    margin-left: 40%;
-}
-
-main #habilidades_titulo {
-    width: 140px;
-    margin-left: 40%;
+    margin: auto;
 }
 
 main #quem_sou_eu_conteudo {
     gap: 3rem;
+    padding-bottom: 8%;
     display: flex;
     font-size: large;
+    width: 70%;
+    margin: auto;
 }
 
 main #habilidades_conteudo p {
@@ -127,6 +121,8 @@ main #habilidades_conteudo p {
     text-align: center;
     padding-top: 5%;
     opacity: 0.6;
+    width: 70%;
+    margin: auto;
 }
 
 main #habilidades_conteudo img {
@@ -134,7 +130,7 @@ main #habilidades_conteudo img {
 }
 
 main .habilidades_icones {
-    padding-top: 12%;
+    padding-top: 5%;
     text-align: center;
     gap: 10px;
 }
@@ -169,14 +165,12 @@ main .icone_html:hover,
 #edicao {
     display: none;
     padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 65%;
+    margin: auto;
 }
 
 main .habilidades_descricao_item {
     text-align: center;
-    padding-top: 5%;
-    padding-bottom: 3%;
     opacity: 0.8;
 }
 
@@ -230,8 +224,7 @@ main .verMaisBotao, .verMenosBotao{
     text-decoration: underline;
     opacity: 0.7;
     font-size: medium;
-    
-    
+    margin: auto;
 }
 
 main .verMenosBotao{
@@ -241,14 +234,15 @@ main .verMenosBotao{
 main .contato {
     background-color: #4cc0c6;
     padding-top: 10%;
-    padding-left: 15%;
-    padding-right: 15%;
+    
 }
 
 main .contato_link {
     padding-top: 7%;
     display: flex;
     gap: 1.5rem;
+    width: 70%;
+    margin: auto;
 }
 
 main .contato_link p {
@@ -309,12 +303,11 @@ main .inicio_descricao_e_img,
         text-align: center;
     }
 
-    main .projeto_par {
+    main .projeto_par, .projeto_impar {
         padding-left: 0%;
-    }
-
-    main .projeto_impar {
         padding-right: 0%;
+        margin: auto;
+        width: 90%;
     }
     
     .inicio_descricao_e_img,
@@ -324,10 +317,14 @@ main .inicio_descricao_e_img,
         
     }
 
+    .inicio_link{
+        margin: auto;
+    }
+
     .inicio_descricao_e_img img {
         width: 250px;
         height: 250px;
-        align-self: center;
+        margin: auto;
         padding-bottom: 5%;
     }
 
